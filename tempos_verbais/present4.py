@@ -12,43 +12,41 @@ arrow = '-> '
 paint, blue = c[4], c[7]
 
 ##
-print(f'\nPronome + {c[3]}verbo to be no presente{c[7]} + advérbio + adjetivo')
-"I am actually glad"
+syntax932 = f'\nPronome I + {c[3]}to be{c[7]} + advérbio + adjetivo'  # I am actually glad
 var932 = _(i_u, x, am_l, x, adv_ly, x, adj)
-print(f'{paint}{var932}{blue}')  # 666
+print(f'{syntax932} -> {paint}{var932}{blue}')  # 932
 
-"He is actually glad"
+##
+syntax685 = f'Pronomes he/she/it + {c[3]}to be{c[7]} + advérbio + adjetivo'  # He is actually glad
 var685 = _(pro_sgl_others_u, x, is_l, x, adv_ly, x, adj)
-print(f'{paint}{var685}{blue}')  # 797
+print(f'{syntax685} -> {paint}{var685}{blue}')  # 685
 
-"We are actually glad"
+##
+syntax958 = f'Pronomes we/you/they + {c[3]}to be{c[7]} + advérbio + adjetivo'  # We are actually glad
 var958 = _(pro_pl_u, x, are_l, x, adv_ly, x, adj)
-print(f'{paint}{var958}{blue}')  # 898
-
-
-
-
+print(f'{syntax958} -> {paint}{var958}{blue}')  # 958
 
 ##
-print(f'\n{c[3]}verbo to be no presente{c[7]} + pronome + advérbio de frequência + adjetivo')
-"Is she crazy?"
-var436 = _(is_u, x, pro_sgl_others_l, x, adv_frequency, x, adj, '?')
-print(f'{paint}{var436}{blue}')  # 436
-
-"Are you crazy?"
-var552 = _(are_u, x, pro_pl_l, x, adv_frequency, x, adj, '?')
-print(f'{paint}{var552}{blue}')  # 552
-
-"Am I crazy?"
+syntax178 = f'{c[3]}to be{c[7]} + pronome I + advérbio de frequência + adjetivo'  # Am I crazy?
 var178 = _(am_u, x, i_u, x, adv_frequency, x, adj, '?')
-print(f'{paint}{var178}{blue}')  # 178
-
-
-
-
+print(f'{syntax178} -> {paint}{var178}{blue}')  # 178
 
 ##
-"Dogs are clearly cute"
-print(f'\nSubstantivo no plural + {c[3]}verbo to be no presente{c[7]} + advérbio + adjetivo')
+syntax436 = f'{c[3]}to be{c[7]} + pronomes he/she/it + advérbio de frequência + adjetivo'  # Is she crazy?
+var436 = _(is_u, x, pro_sgl_others_l, x, adv_frequency, x, adj, '?')
+print(f'{syntax436} -> {paint}{var436}{blue}')  # 436
+
+##
+syntax552 = f'{c[3]}to be{c[7]} + pronomes we/you/they + advérbio de frequência + adjetivo'  # Are you crazy?
+var552 = _(are_u, x, pro_pl_l, x, adv_frequency, x, adj, '?')
+print(f'{syntax552} -> {paint}{var552}{blue}')  # 552
+
+##
+syntax381 = f'Substantivo plural + {c[3]}to be{c[7]} + advérbio + adjetivo'  # Dogs are clearly cute
 var381 = _(nouns_pl, x, are_l, x, adv_gl, x, adj)
-print(f'{paint}{var381}{blue}')  # 381
+print(f'{syntax381} -> {paint}{var381}{blue}')  # 381
+
+##
+syntax582 = f'{c[3]}to be{c[7]} + substantivo plural + advérbio + adjetivo'  # Are dogs clearly cute?
+var582 = _(are_l, x, nouns_pl, x, adv_gl, x, adj, '?')
+print(f'{syntax582} -> {paint}{var582}{blue}')  # 582

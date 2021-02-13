@@ -38,7 +38,9 @@ could_subject_not = [
 
 "--------------------------------------------------- VERBO HAS/HAVE ---------------------------------------------------"
 
-has_have_gl = ['Has', 'has', 'Have', 'have']
+has_have_gl = ['Has', 'Has not', "Hasn't", 'has', 'has not', "hasn't", 'Have', 'Have not', "Haven't", 'have',
+               'have not', "haven't"]
+
 has_have_all_u = ['Has', 'Have']
 has_have_all_l = ['has', 'have']
 the_has_u = ['Has']
@@ -49,14 +51,14 @@ the_have_l = ['have']
 "------------------------------------------------------ ARTIGOS ------------------------------------------------------"
 ##
 
-art_undef_l = ['a', 'an']
-art_undef_u = ['A', 'An']
-
-art_all_l = ['a', 'an', 'the']
+art_gl = ['The', 'the', 'A', 'an', ]
 art_all_u = ['A', 'An', 'The']
+art_all_l = ['a', 'an', 'the']
+art_undef_u = ['A', 'An']
+art_undef_l = ['a', 'an']
+art_the_u = ['The']
+art_the_l = ['the']
 
-the_the_l = ['the']
-the_the_u = ['The']
 
 "------------------------------------------------------ PRONOMES ------------------------------------------------------"
 ##
