@@ -12,176 +12,103 @@ names = [
     'Pedro', 'Rafael', 'Rafaela', 'Samuel', 'Sophia', 'Theo', 'Valentina', 'Vitor', 'Yasmin'
 ]
 
-"----------------------------------------------------- VERBO CAN -----------------------------------------------------"
-##
-
-can_could_global = [
-    'can', "can't", 'cannot', 'could', "couldn't", 'could not'
-    'Can', "Can't", 'Cannot', 'Could', "Couldn't", 'Could not'
-]
-
-can_l, can_u = ['can'], ['Can']
-can_ng_large_l, can_ng_large_u = ['cannot'], ['Cannot']
-can_ng_short_l, can_ng_short_u = ["can't"], ["Can't"]
-
-could_l, could_u = ['could'], ['Could']
-could_ng_large_l, could_ng_large_u = ['could not'], ['Could not']
-could_ng_short_l, could_ng_short_u = ["couldn't"], ["Couldn't"]
-
-can_subject_not = [
-    'Can I not', 'Can you not', 'Can he not', 'Can she not', 'Can it not', 'Can we not', 'Can they not'
-]
-
-could_subject_not = [
-    'Could I not', 'Could you not', 'Could he not', 'Could she not', 'Could it not', 'Could we not', 'Could they not'
-]
-
-"--------------------------------------------------- VERBO HAS/HAVE ---------------------------------------------------"
-
-has_have_gl = ['Has', 'Has not', "Hasn't", 'has', 'has not', "hasn't", 'Have', 'Have not', "Haven't", 'have',
-               'have not', "haven't"]
-
-has_have_all_u = ['Has', 'Have']
-has_have_all_l = ['has', 'have']
-the_has_u = ['Has']
-the_has_l = ['has']
-the_have_u = ['Have']
-the_have_l = ['have']
-
-"------------------------------------------------------ ARTIGOS ------------------------------------------------------"
-##
-
-art_gl = ['The', 'the', 'A', 'an', ]
-art_all_u = ['A', 'An', 'The']
-art_all_l = ['a', 'an', 'the']
-art_undef_u = ['A', 'An']
-art_undef_l = ['a', 'an']
-art_the_u = ['The']
-art_the_l = ['the']
-
-
-"------------------------------------------------------ PRONOMES ------------------------------------------------------"
-##
-
-pro_gl = [
-    'I', 'you', 'he', 'she', 'it', 'we', 'you', 'they',
-    'I', 'You', 'He', 'She', 'It', 'We', 'You', 'They'
-]
-
-pro_gl_u = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
-pro_gl_l = ['I', 'you', 'he', 'she', 'it', 'we', 'you', 'they']
-
-pro_sgl_u = ['I', 'He', 'She', 'It']
-pro_sgl_l = ['I', 'he', 'she', 'it']
-
-pro_sgl_others_u = ['He', 'She', 'It']
-pro_sgl_others_l = ['he', 'she', 'it']
-
-pro_pl_u = ['We', 'You', 'They']
-pro_pl_l = ['we', 'you', 'they']
-
-pro_pl_others_u = ['I', 'We', 'You', 'They']
-pro_pl_others_l = ['I', 'we', 'you', 'they']
-
-i_u, you_u, he_u, she_u, it_u, we_u, they_u = \
-    ['I'], ['You'], ['He'], ['She'], ['It'], ['We'], ['They']
-
-i_l, you_l, he_l, she_l, it_l, we_l, they_l = \
-    ['I'], ['you'], ['he'], ['she'], ['it'], ['we'], ['they']
-
-"---------------------------------------------------- VERBO TO BE ----------------------------------------------------"
-##
-
-to_be_pst_gl = ['am', 'are', 'is', 'Am', 'Are', 'Is']
-to_be_pst_all_u = ['Am', 'Are', 'Is']
-to_be_pst_all_l = ['am', 'are', 'is']
-
-to_be_pst_sgl_u = ['Am', 'Is']
-to_be_pst_sgl_l = ['am', 'is']
-
-are_u = ['Are']
-are_l = ['are']
-
-am_l = ['am']
-am_u = ['Am']
-
-is_l = ['is']
-is_u = ['Is']
-
-"--------------------------------------------------- VERBO AUXILIAR ---------------------------------------------------"
-##
-
-do_does_gl = ['Do', 'Does', 'do', 'does']
-
-the_do_u = ['Do']
-the_do_l = ['do']
-
-the_does_u = ['Does']
-the_does_l = ['does']
-
-"---------------------------------------------------- SEPARADORES ----------------------------------------------------"
-##
-
-and_ = ['and']
-
-"---------------------------------------------- PRONOMES DEMONSTRATIVOS ----------------------------------------------"
-##
-
-l_this, l_that, l_these, l_those = ['this'], ['that'], ['these'], ['those']
-u_this, u_that, u_these, u_those = ['This'], ['That'], ['These'], ['Those']
-
-demo_sgl_l = ['this', 'that']
-demo_sgl_u = ['This', 'That']
-
-demo_pl_l = ['these', 'those']
-demo_pl_u = ['These', 'Those']
-
-demo_all_l = ['this', 'these', 'that', 'those']
-demo_all_u = ['This', 'These', 'That', 'Those']
-
-# pronouns_demonstrative = [*pronouns_demonstrative_lower, *pronouns_demonstrative_upper]
-demo_gl = ['this', 'these', 'that', 'those', 'This', 'These', 'That', 'Those']
-
-"----------------------------------------------- ADJETIVOS POSSESSIVOS -----------------------------------------------"
-##
-
-adj_pos_l = ['my', 'your', 'his', 'her', 'its', 'our', 'their']
-# adjectives_possessive_upper = [index.replace(index[0], index[0].upper()) for index in adjectives_possessive_lower]
-adj_pos_u = ['My', 'Your', 'His', 'Her', 'Its', 'Our', 'Their']
-
 "--------------------------------------------------- SUBSTANTIVOS ---------------------------------------------------"
 ##
 
 nouns = [
-    'air', 'airs', 'area', 'areas', 'art', 'arts', 'bodies', 'body', 'book', 'books', 'business', 'businesses', 'car',
-    'cars', 'case', 'cases', 'change', 'changes', 'child', 'children',
-
-    'cities', 'city', 'communities', 'community', 'companies', 'company', 'countries', 'country', 'day', 'days', 'door',
-    'doors', 'ending', 'endings', 'eye', 'eyes', 'face', 'faces', 'fact', 'facts',
-
-    'families', 'family', 'father', 'fathers', 'force', 'forces', 'friend', 'friends', 'game', 'games', 'girl', 'girls',
-    'government', 'governments', 'group', 'groups', 'guy', 'guys', 'hand', 'hands',
-
-    'head', 'heads', 'histories', 'history', 'home', 'homes', 'hour', 'hours', 'house', 'houses', 'idea', 'ideas',
-    'issue', 'issues', 'job', 'jobs', 'kid', 'kids', 'kind', 'kinds',
-
-    'law', 'laws', 'level', 'levels', 'life', 'lifes', 'line', 'lines', 'lot', 'lots', 'man', 'member', 'members',
-    'men', 'minute', 'minutes', 'moment', 'moments', 'month', 'months',
-
-    'morning', 'mornings', 'mother', 'mothers', 'name', 'names', 'night', 'nights', 'number', 'numbers', 'office',
-    'offices', 'other', 'others', 'parent', 'parents', 'part', 'parties', 'parts', 'party',
-
-    'person', 'person', 'piece of information', 'pieces of information', 'place', 'places', 'point',
-    'points', 'power', 'powers', 'president', 'presidents', 'problem', 'problems', 'program', 'programs', 'question',
-    'questions',
-
-    'reason', 'reasons', 'research', 'researches', 'result', 'results', 'right', 'rights', 'room', 'rooms', 'school',
-    'schools', 'service', 'services', 'side', 'sides', 'state', 'states', 'stories', 'story',
-
-    'student', 'students', 'studies', 'study', 'system', 'systems', 'teacher', 'teachers', 'team', 'teams', 'thing',
-    'things', 'time', 'times', 'war', 'wars', 'water', 'waters', 'way', 'ways',
-
-    'week', 'weeks', 'woman', 'women', 'word', 'words', 'work', 'works', 'world', 'worlds', 'year', 'years'
+    'air', 'airs',
+    'area', 'areas',
+    'art', 'arts',
+    'body', 'bodies',
+    'book', 'books',
+    'business', 'businesses',
+    'car', 'cars',
+    'change', 'changes',
+    'child', 'children',
+    'city', 'cities',
+    'community', 'communities',
+    'company', 'companies',
+    'country', 'countries',
+    'day', 'days',
+    'door', 'doors',
+    'ending', 'endings',
+    'eye', 'eyes',
+    'face', 'faces',
+    'fact', 'facts',
+    'family', 'families',
+    'father', 'fathers',
+    'strength', 'strengths',
+    'friend', 'friends',
+    'game', 'games',
+    'girl', 'girls',
+    'government', 'governments',
+    'group', 'groups',
+    'guy', 'guys',
+    'hand', 'hands',
+    'head', 'heads',
+    'history', 'histories',
+    'home', 'homes',
+    'hour', 'hours',
+    'house', 'houses',
+    'idea', 'ideas',
+    'issue', 'issues',
+    'job', 'jobs',
+    'kid', 'kids',
+    'kind', 'kinds',
+    'law', 'laws',
+    'level', 'levels',
+    'life', 'lifes',
+    'line', 'lines',
+    'man', 'men',
+    'member', 'members',
+    'minute', 'minutes',
+    'moment', 'moments',
+    'month', 'months',
+    'morning', 'mornings',
+    'mother', 'mothers',
+    'name', 'names',
+    'night', 'nights',
+    'number', 'numbers',
+    'office', 'offices',
+    'other', 'others',
+    'parents',
+    'part', 'parts',
+    'party', 'parties',
+    'person', 'people',
+    'piece of information', 'pieces of information',
+    'place', 'places',
+    'point', 'points',
+    'power', 'powers',
+    'president', 'presidents',
+    'problem', 'problems',
+    'program', 'programs',
+    'question', 'questions',
+    'reason', 'reasons',
+    'research', 'researches',
+    'result', 'results',
+    'right', 'rights',
+    'room', 'rooms',
+    'school', 'schools',
+    'service', 'services',
+    'side', 'sides',
+    'state', 'states',
+    'story', 'stories',
+    'student', 'students',
+    'study', 'studies',
+    'system', 'systems',
+    'teacher', 'teachers',
+    'team', 'teams',
+    'thing', 'things',
+    'time', 'times',
+    'war', 'wars',
+    'water', 'waters',
+    'way', 'ways',
+    'week', 'weeks',
+    'woman', 'women',
+    'word', 'words',
+    'work', 'works',
+    'world', 'worlds',
+    'year', 'years'
 ]
 # print('nouns = ', len(nouns))
 
@@ -233,6 +160,225 @@ nouns_pl = [
 "IMPORTANTE PARA COMPARAÇÃO"
 # for x in zip(nouns_singular, nouns_plural):
 #     print(x)
+
+"-------------------------------------------------------- CAN ---------------------------------------------------------"
+##
+
+can_gl = [
+    "can", "can't", "cannot",
+    "Can", "Can't", "Cannot",
+    "could", "couldn't", "could not",
+    "Could", "Couldn't", "Could not"
+]
+
+can_gl_suitable = ["can", "can't", "cannot", "could", "couldn't", "could not"]
+
+can_l = ["can"]
+can_l_ng = ["cannot"]
+can_l_ng_flex = ["can't"]
+
+can_u = ["Can"]
+can_u_ng = ["Cannot"]
+can_u_ng_flex = ["Can't"]
+
+could_l = ["could"]
+could_l_ng = ["could not"]
+could_l_ng_flex = ["couldn't"]
+
+could_u = ["Could"]
+could_u_ng = ["Could not"]
+could_u_ng_flex = ["Couldn't"]
+
+can_subject_not = [
+    'Can I not', 'Can you not', 'Can he not', 'Can she not', 'Can it not', 'Can we not', 'Can they not'
+]
+
+could_subject_not = [
+    'Could I not', 'Could you not', 'Could he not', 'Could she not', 'Could it not', 'Could we not', 'Could they not'
+]
+
+"-------------------------------------------------------- HAVE --------------------------------------------------------"
+##
+
+have_gl = [
+    "has", "has not", "hasn't",
+    "Has", "Has not", "Hasn't",
+    "have", "have not", "haven't",
+    "Have", "Have not", "Haven't",
+]
+
+have_gl_suitable = ["has", "has not", "hasn't", "have", "have not", "haven't"]
+
+has_l = ["has"]
+has_l_ng = ["has not"]
+has_l_ng_flex = ["hasn't"]
+
+has_u = ["Has"]
+has_u_ng = ["Has not"]
+has_u_ng_flex = ["Hasn't"]
+
+have_l = ["have"]
+have_l_ng = ["have not"]
+have_l_ng_flex = ["haven't"]
+
+have_u = ["Have"]
+have_u_ng = ["Have not"]
+have_u_ng_flex = ["Haven't"]
+
+"--------------------------------------------------------- DO ---------------------------------------------------------"
+##
+
+do_gl = [
+    "does", "does not", "doesn't",
+    "Does", "Does not", "Doesn't",
+    "do", "do not", "don't",
+    "Do", "Do not", "Don't"
+]
+
+do_gl_suitable = ["does", "does not", "doesn't", "do", "do not", "don't"]
+
+does_l = ["does"]
+does_l_ng = ["does not"]
+does_l_ng_flex = ["doesn't"]
+
+does_u = ["Does"]
+does_u_ng = ["Does not"]
+does_u_ng_flex = ["Doesn't"]
+
+do_l = ["do"]
+do_l_ng = ["do not"]
+do_l_ng_flex = ["don't"]
+
+do_u = ["Do"]
+do_u_ng = ["Do not"]
+do_u_ng_flex = ["Don't"]
+
+"------------------------------------------------------ ARTIGOS ------------------------------------------------------"
+##
+
+art_gl = ['The', 'the', 'A', 'an', ]
+art_all_u = ['A', 'An', 'The']
+art_all_l = ['a', 'an', 'the']
+art_undef_u = ['A', 'An']
+art_undef_l = ['a', 'an']
+art_the_u = ['The']
+art_the_l = ['the']
+
+"------------------------------------------------------ PRONOMES ------------------------------------------------------"
+##
+
+pro_gl = [
+    'I', 'you', 'he', 'she', 'it', 'we', 'you', 'they',
+    'I', 'You', 'He', 'She', 'It', 'We', 'You', 'They',
+]
+
+pro_gl_u = ['I', 'You', 'He', 'She', 'It', 'We', 'You', 'They']
+pro_gl_l = ['I', 'you', 'he', 'she', 'it', 'we', 'you', 'they']
+
+pro_sgl_u = ['I', 'He', 'She', 'It']
+pro_sgl_l = ['I', 'he', 'she', 'it']
+
+pro_sgl_is_u = ['He', 'She', 'It']
+pro_sgl_is_l = ['he', 'she', 'it']
+
+pro_pl_u = ['We', 'You', 'They']
+pro_pl_l = ['we', 'you', 'they']
+
+pro_pl_others_u = ['I', 'We', 'You', 'They']
+pro_pl_others_l = ['I', 'we', 'you', 'they']
+
+i_u, you_u, he_u, she_u, it_u, we_u, they_u = \
+    ['I'], ['You'], ['He'], ['She'], ['It'], ['We'], ['They']
+
+i_l, you_l, he_l, she_l, it_l, we_l, they_l = \
+    ['I'], ['you'], ['he'], ['she'], ['it'], ['we'], ['they']
+
+"------------------------------------------------------- TO BE --------------------------------------------------------"
+##
+
+to_be_pst_gl = [
+    "am", "is", "are",
+    "am not", "is not", "are not",
+    "isn't", "aren't",
+    "Am", "Is", "Are",
+    "Am not", "Is not", "Are not",
+    "Isn't", "Aren't"
+]
+
+to_be_pst_gl_suitable = [
+    "am", "is", "are", "am not", "is not", "are not", "isn't", "aren't",
+]
+
+am_l = ["am"]
+am_l_ng = ["am not"]
+
+am_u = ["Am"]
+am_u_ng = ["Am not"]
+
+is_l = ["is"]
+is_l_ng = ["is not"]
+is_l_ng_flex = ["isn't"]
+
+is_u = ["Is"]
+is_u_ng = ["Is not"]
+is_u_ng_flex = ["Isn't"]
+
+are_l = ["are"]
+are_l_ng = ["are not"]
+are_l_ng_flex = ["aren't"]
+
+are_u = ["Are"]
+are_u_ng = ["Are not"]
+are_u_ng_flex = ["Aren't"]
+
+"---------------------------------------------------- SEPARADORES ----------------------------------------------------"
+##
+
+and_ = ['and']
+
+"---------------------------------------------- PRONOMES DEMONSTRATIVOS ----------------------------------------------"
+##
+
+# pronouns_demonstrative = [*pronouns_demonstrative_lower, *pronouns_demonstrative_upper]
+demo_gl = [
+    'this', 'these', 'that', 'those',
+    'This', 'These', 'That', 'Those'
+]
+
+demo_gl_l = ['this', 'these', 'that', 'those']
+demo_gl_u = ['This', 'These', 'That', 'Those']
+
+demo_sgl_l = ['this', 'that']
+demo_sgl_u = ['This', 'That']
+
+demo_pl_l = ['these', 'those']
+demo_pl_u = ['These', 'Those']
+
+this_l = ['this']
+this_u = ['This']
+
+these_l = ['these']
+these_u = ['These']
+
+that_l = ['that']
+that_u = ['That']
+
+those_l = ['those']
+those_u = ['Those']
+
+"----------------------------------------------- ADJETIVOS POSSESSIVOS -----------------------------------------------"
+##
+
+adj_pos_gl = [
+    'My', 'Your', 'His', 'Her', 'Its', 'Our', 'Their',
+    'my', 'your', 'his', 'her', 'its', 'our', 'their'
+]
+
+# adjectives_possessive_upper = [index.replace(index[0], index[0].upper()) for index in adjectives_possessive_lower]
+adj_pos_gl_u = ['My', 'Your', 'His', 'Her', 'Its', 'Our', 'Their']
+
+adj_pos_gl_l = ['my', 'your', 'his', 'her', 'its', 'our', 'their']
+
 
 "----------------------------------------------------- ADVÉRBIOS -----------------------------------------------------"
 ##

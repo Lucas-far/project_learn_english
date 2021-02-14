@@ -1,0 +1,10 @@
+
+
+
+("this isn't here, is hasn't been, ever", "isto não está aqui, não esteve, nunca"), 
+("the boy couldn't ride his bycicle", "o menino não conseguia andar de bicicleta"), 
+("our friend is an idiot", "nosso amigo é um idiota"), 
+("I do a lot of things, but it isn't enough, and I know this is the truth. My friend came today, but she hasn't been invited, she is such an owl, she also likes movies about wars, not just her, but her boyfriend too, it is their favorite", "Eu faço muitas coisas, mas não é o suficiente, e eu sei que isso é verdade. Minha amiga veio hoje, mas não foi convidada, ela é uma coruja, ela também gosta de filmes de guerra, não só dela, mas do namorado também, é o favorito deles"), 
+("your friend made an awesome change in my room", "seu amigo fez uma mudança incrível no meu quarto"), 
+("those aren't natural forces, I can feel it hasn't been normal, I should tell her what to do, but she can't be here now", "essas não são forças naturais, posso sentir que não tem sido normal, eu deveria dizer a ela o que fazer, mas ela não pode estar aqui agora"), 
+("it doesn't matter, they haven't had the time, our friendship is over, time is over, I am not happy at all", "não importa, eles não tiveram tempo, nossa amizade acabou, acabou o tempo, eu não estou nada feliz"), 

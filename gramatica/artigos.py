@@ -1,17 +1,9 @@
 
 
-articles_all_upper = [
-    'A', 'An', 'The'
-]
-
-articles_all_lower = [
-    'a', 'an', 'the'
-]
-
-articles_upper = [
-    'The'
-]
-
-articles_lower = [
-    'the'
-]
+art_gl = ['The', 'the', 'A', 'an', ]
+art_all_u = ['A', 'An', 'The']
+art_all_l = ['a', 'an', 'the']
+art_undef_u = ['A', 'An']
+art_undef_l = ['a', 'an']
+art_the_u = ['The']
+art_the_l = ['the']

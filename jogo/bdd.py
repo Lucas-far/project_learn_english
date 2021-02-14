@@ -1,6 +1,8 @@
 
 
-bdd = []
+bdd = [
+
+]
 
 def look_for_word(the_word):
     """"""
@@ -55,4 +57,3 @@ if __name__ == '__main__':
 ""  # executar esse arquivo [ bdd.py ], copiar o retorno [ shift + down ]
 ""  # copiar o retorno, e substituir a variável [ bdd ] acima
 
-("cities", "cidades"), ("Could not", "Não poderia"), ("Has not", "Não tem"), ("an", "a"), 
