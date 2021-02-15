@@ -109,7 +109,6 @@ syntax = [
     substantivo, can, have, do, artigo, pronome, to_be, pro_demonstrativo, adj_possessivo
 ]
 
-syntax_translated = [*syntax]
 
 easy, simple, good, cool, challenging, hard, fluent = [], [], [], [], [], [], []
 

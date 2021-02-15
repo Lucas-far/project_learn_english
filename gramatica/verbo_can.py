@@ -1,5 +1,19 @@
 
 
+# easy
+can_pst_lvl_easy = ["can", "can't", "cannot"]
+
+# average
+can_pst_lvl_average = ["can", "can't", "cannot", "could", "couldn't", "could not"]
+
+# fluent
+can_pst_lvl_fluent = [
+    "can", "can't", "cannot",
+    "Can", "Can't", "Cannot",
+    "could", "couldn't", "could not",
+    "Could", "Couldn't", "Could not"
+]
+
 can_gl = [
     "can", "can't", "cannot",
     "Can", "Can't", "Cannot",
@@ -33,3 +47,6 @@ can_subject_not = [
 could_subject_not = [
     'Could I not', 'Could you not', 'Could he not', 'Could she not', 'Could it not', 'Could we not', 'Could they not'
 ]
+
+if __name__ == '__main__':
+    pass

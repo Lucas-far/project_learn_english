@@ -1,16 +1,18 @@
 
+
 from gramatica.substantivo import nouns, substantivos
-from metodos.metodos import *
+from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores import colors
 
-# CONTENT HIGHLIGHT AND SPLIT
+# CONTENT HIGHLIGHT, SPLIT AND CONTROL
 red, purple, yellow, blue, paint = colors[1], colors[2], colors[3], colors[4], colors[7]
 break_row = '\n'
 indent = '    '
 bricks = '=' * 20
 report_model = '==================== RELATÓRIO ===================='
 splitter = '=' * len(report_model)
+controller = f'{break_row}{indent}{indent}Aperte ENTER ou qualquer outra tecla para continuar...{break_row}'
 
 # VARIABLES TO DETERMINE THE PLAYER'S EFFICACY
 positive_score = 0
@@ -19,18 +21,18 @@ negative_score = 0
 
 while True:
 
-    "STEP 1"  # CREATING THE MAIN WORD, ITS TRANSLATION, AND LISTS WHICH WILL MANAGE THINGS
+    "STEP 1"  # CREATING THE MAIN NOUN, ITS TRANSLATION, AND LISTS WHICH WILL MANAGE THINGS
 
-    box = []                                      # STORE WORDS FOR THE QUIZ
-    box_translation = []                          # STORE THE MEANING OF THE WORDS
+    box = []                                      # STORE NOUNS FOR THE QUIZ
+    box_translation = []                          # STORE THE MEANING OF THE NOUNS
     noun = choice(nouns)                          # CHOSEN NOUN
     noun_index = nouns.index(noun)                # FIND THE INDEX OF THE CHOSEN NOUN
     noun_translation = substantivos[noun_index]   # GET THE TRANSLATION OF THE CHOSEN NOUN
     box_correct_translation = [noun_translation]  # MEANING OF THE CHOSEN NOUN ADDED SEPARATELY
-    box_translation.append(noun_translation)      # MEANING OF THE CHOSEN NOUN ADDED AS THE FIRST INDEX OF ANOTHER LIST
+    box_translation.append(noun_translation)      # MEANING OF THE CHOSEN NOUN ADDED AS THE FIRST INDEX
     box.append(noun)                              # CHOSEN NOUN ADDED AS THE FIRST INDEX OF THE LIST
 
-    "STEP 2"  # CREATING THE REMAINING WORDS TO FILL THE QUIZ
+    "STEP 2"  # CREATING THE REMAINING NOUNS TO FILL THE QUIZ
 
     while len(box) < 5:  # 4 OTHER WORDS ARE NEEDED TO MAKE A QUIZ, SO FAR THERE IS ONE: THE RIGHT ANSWER
 
@@ -43,7 +45,7 @@ while True:
         box.append(fake)
         box_translation.append(fake_translation)
 
-        "OBS"  # WHILE INSERTING NEW WORDS, THERE IS A CHANCE TO REPEAT WORDS, AND THIS HAS TO BE AVOIDED
+        "OBS"  # WHILE INSERTING NEW NOUNS, THERE IS A CHANCE TO REPEAT, AND THIS HAS TO BE AVOIDED
         check_repeated_data = []
 
         # THIS LOOP WILL CHECK HOW MANY TIMES EACH DATA HAS REPEATED
@@ -60,7 +62,7 @@ while True:
 
     "STEP 3"  # RUN ALGORITHM
 
-    shuffle(box_translation)  # AFTER ALL WORDS ARE READY, IT IS STRATEGIC TO SHUFFLE THE LIST
+    shuffle(box_translation)  # AFTER ALL NOUNS ARE READY, IT IS STRATEGIC TO SHUFFLE THE LIST
 
     greetings = welcome('treino de substantivo', prefix=3, prefix2=7)
     print(indent, greetings)
@@ -75,40 +77,32 @@ while True:
         3 - {box_translation[2]}
         4 - {box_translation[3]}
         5 - {box_translation[4]}
-
+        
         Digite de 1 a 5, para fornecer sua resposta
         Digite após a seta -> """,
         start=1,
         limit=5
     )
 
-    # label = f"""
-    # {bricks}
-    # O QUE É {yellow}{noun}{paint} ?
-    # {bricks}
-    # 1 - {box_translation[0]}
-    # 2 - {box_translation[1]}
-    # 3 - {box_translation[2]}
-    # 4 - {box_translation[3]}
-    # 5 - {box_translation[4]}
-    #
-    # Digite de 1 a 5, para fornecer sua resposta
-    # Digite após a seta -> """
-    #
-    # answer = int(input(label))
+    # EXAMPLE
+    """
+    noun = ['street']
+    box_correct_translation = ['rua']
+    box = ['pilot', 'street', 'road', 'rubber', 'chain']
+    box_translation = ['piloto', 'rua', 'estrada', 'borracha', 'corrente']
+    """
 
     # ONE OF THEM IS CORRECT, THE ONLY CORRECT WILL RETURN A NUMBER LESSER THAN 10
-
     conditions = [
-        *[0 if box_translation[0] in box_correct_translation else 10],
-        *[1 if box_translation[1] in box_correct_translation else 11],
-        *[2 if box_translation[2] in box_correct_translation else 12],
-        *[3 if box_translation[3] in box_correct_translation else 13],
-        *[4 if box_translation[4] in box_correct_translation else 14],
+        *[1 if box_translation[0] in box_correct_translation else 10],
+        *[2 if box_translation[1] in box_correct_translation else 11],
+        *[3 if box_translation[2] in box_correct_translation else 12],
+        *[4 if box_translation[3] in box_correct_translation else 13],
+        *[5 if box_translation[4] in box_correct_translation else 14],
     ]
 
-    # THE ONLY NUMBER LESSER THAN 10 IS PLACED AS INDEX 0, AND HAS TO BE +1 BECAUSE THE GAME OPTIONS START AT 1
-    correct_answer_index = sorted(conditions)[0] + 1
+    # THE ONLY NUMBER LESSER THAN 10 IS PLACED AS INDEX 0
+    correct_answer_index = sorted(conditions)[0]
 
     success = f"""
         {report_model}
@@ -135,6 +129,8 @@ while True:
         print(games_played.format(positive_score + negative_score))
         print(score_table.format(positive_score, negative_score))
         print(indent + indent + splitter)
+
+    input(controller)
 
     "ALTERNATIVE"
     # if answer == 1:

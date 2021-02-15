@@ -1,7 +1,7 @@
 
 
 from gramatica.substantivo import nouns, substantivos
-from metodos import *
+from metodos.metodos import *
 from random import choice, shuffle
 from cores import colors as x
 

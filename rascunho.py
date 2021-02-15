@@ -6,3 +6,6 @@
 #
 # var = TextBlob('I am not impressed', analyzer=NaiveBayesAnalyzer())
 # print(var.sentiment)
+
+l = [True, False, False, False, False]
+print(sorted(l))
