@@ -1,0 +1,15 @@
+
+
+box_target_indexes_int = [adjectives.index(word) for word in box]
+box_ordered_translations_by_index_int = [adjetivos[word] for word in box_target_indexes_int]
+box_ordered_translations_by_index_str = " -> ".join([str(adjetivos[word]) for word in box_target_indexes_int])
+
+failure = f"""
+    {report_model}
+    {red}Resposta incorreta{paint}
+    {blue}Resposta correta:{paint} {box_correct_translation[0]}
+
+    DETALHES:
+    {" -> ".join(box)}
+    {box_ordered_translations_by_index_str}
+"""

@@ -1,5 +1,45 @@
 
 
+def verify(*args, database: list):
+    print('\n')
+    list_found = []
+    list_not_found = []
+    list_of_indexes = []
+    for word in args:
+        if word in database:
+            word_index = database.index(word)
+            list_of_indexes.append(word_index)
+            list_found.append(f'\033[1:34m{word}\033[m')
+            # print(f'Índice {word_index} -> \033[1:34m{word}\033[m')
+        else:
+            list_not_found.append(f'\033[1:31m{word}\033[m')
+            # print(f'Ausente -> \033[1:31m{word}\033[m')
+
+    print('=============================================== ENCONTRADOS ===============================================')
+    print('\n')
+    for id_, word in enumerate(list_found):
+        id_ = id_ + 1
+        if not id_ % 11:
+            print('\n')
+            print(id_, word, end=' ')
+        else:
+            print(id_, word, end=' ')
+    print('\n')
+    print('================================================ AUSENTES =================================================')
+    print('\n')
+    for id_, word in enumerate(list_not_found):
+        id_ = id_ + 1
+        if not id_ % 11:
+            print('\n')
+            print(id_, word, end=' ')
+        else:
+            print(id_, word, end=' ')
+
+    print('\n')
+    print('====================================== ÍNDICE DOS DADOS ENCONTRADOS =======================================')
+    return list_of_indexes
+
+
 def get_input_int(the_input: int = 1, text: str = 'Write an integer -> ', start: int = 1, limit: int = 9999) -> int:
     """
     To treat improper data while a proper integer number is not being provided.
@@ -68,4 +108,4 @@ def welcome(algorithm_name: str = 'Name of the algorithm', prefix: int = 0, pref
         {bricks}"""
 
 if __name__ == '__main__':
-    print(welcome('treino de substantivo', prefix=3, prefix2=7))
+    pass

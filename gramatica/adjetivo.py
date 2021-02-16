@@ -18,11 +18,13 @@ adjectives = [
 
     'stupid', 'irrelevant', 'sweet', 'angry', 'ambitious', 'indifferent', 'marvelous', 'identical', 'clever',
     'enthusiastic', 'vibrant', 'affirmative', 'negative', 'comprehensive', 'intuitive', 'strange', 'weird', 'odd',
-    'worthy', 'flexible'
+    'worthy', 'flexible',
+
+    'obnoxiously', 'fast', 'golden'
 ]
 
 adjetivos = [
-    'outro(a)', 'novo(a)', 'bom(a)', 'alto(a)', 'velho(a)', 'ótimo(a)', 'excelente/grande', 'americano(a)',
+    'outro(a)', 'novo(a)', 'bom(a)', 'alto(a)', 'velho(a)', 'ótimo(a)', 'grande', 'americano(a)',
     'pequeno(a)', 'grande', 'nacional', 'novo(a)', 'diferente', 'preto(a)', 'longo', 'pequeno', 'importante',
     'político', 'ruim/mau/má', 'branco(a)',
 
@@ -45,11 +47,21 @@ adjetivos = [
     'estúpido', 'irrelevante', 'doce', 'com raiva/irritado(a)/zangado(a)', 'ambicioso(a)', 'indiferente',
     'maravilhoso(a)', 'idêntico(a)', 'esperto(a)/inteligente', 'entusiasmado(a)', 'vibrante', 'afirmativo(a)',
     'negativo', 'abrangente', 'intuitivo(a)', 'estranho(a)', 'estranho(a)', 'estranho(a)',
-    'digno(a)', 'flexível'
+    'digno(a)', 'flexível',
+
+    'detestável', 'ligeiro(a)/rápido(a)', 'dourado(a)'
 ]
 
 if __name__ == '__main__':
-    print(len(adjectives))
-    print(len(adjetivos))
+    bricks = '=' * 100
+    block = f'\n{bricks}\n'
+
+    print('\n')
+
+    print(bricks)
+    print(f'{len(adjectives) = }')
+    print(f'{len(adjetivos) = }')
+
+    print(block)
     for x in zip(adjectives, adjetivos):
         print(x)
