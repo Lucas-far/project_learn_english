@@ -1,6 +1,6 @@
 
 
-from gramatica.adjetivo import adjectives, adjetivos
+from gramatica.adjetivo import adjectives, adjectives_pt_br
 from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores import colors
@@ -23,14 +23,14 @@ while True:
 
     "STEP 1"  # CREATING THE MAIN ADJECTIVE, ITS TRANSLATION, AND LISTS WHICH WILL MANAGE THINGS
 
-    box = []                                            # STORE ADJECTIVES FOR THE QUIZ
-    box_translation = []                                # STORE THE MEANING OF THE ADJECTIVES
-    adjective = choice(adjectives)                      # CHOSEN ADJECTIVE
-    adjective_index = adjectives.index(adjective)       # FIND THE INDEX OF THE CHOSEN ADJECTIVE
-    adjective_translation = adjetivos[adjective_index]  # GET THE TRANSLATION OF THE CHOSEN ADJECTIVE
-    box_correct_translation = [adjective_translation]   # MEANING OF THE CHOSEN ADJECTIVE ADDED SEPARATELY
-    box_translation.append(adjective_translation)       # MEANING OF THE CHOSEN ADJECTIVE ADDED AS THE FIRST INDEX
-    box.append(adjective)                               # CHOSEN ADJECTIVE ADDED AS THE FIRST INDEX OF THE LIST
+    box = []                                                   # STORE ADJECTIVES FOR THE QUIZ
+    box_translation = []                                       # STORE THE MEANING OF THE ADJECTIVES
+    adjective = choice(adjectives)                             # CHOSEN ADJECTIVE
+    adjective_index = adjectives.index(adjective)              # FIND THE INDEX OF THE CHOSEN ADJECTIVE
+    adjective_translation = adjectives_pt_br[adjective_index]  # GET THE TRANSLATION OF THE CHOSEN ADJECTIVE
+    box_correct_translation = [adjective_translation]          # MEANING OF THE CHOSEN ADJECTIVE ADDED SEPARATELY
+    box_translation.append(adjective_translation)              # MEANING OF THE CHOSEN ADJECTIVE ADDED AS THE FIRST INDEX
+    box.append(adjective)                                      # CHOSEN ADJECTIVE ADDED AS THE FIRST INDEX OF THE LIST
 
     "STEP 2"  # CREATING THE REMAINING ADJECTIVES TO FILL THE QUIZ
 
@@ -39,7 +39,7 @@ while True:
         # CREATION
         fake = choice(adjectives)
         fake_index = adjectives.index(fake)
-        fake_translation = adjetivos[fake_index]
+        fake_translation = adjectives_pt_br[fake_index]
 
         # INSERTION
         box.append(fake)

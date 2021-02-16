@@ -140,7 +140,6 @@ prep_phrasal_pt_br = [
 
 if __name__ == '__main__':
     bricks = '=' * 100
-    block = f'\n{bricks}\n'
 
     print('\n')
     print(bricks)

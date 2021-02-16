@@ -1,6 +1,6 @@
 
 
-from gramatica.substantivo import nouns, substantivos
+from gramatica.substantivo import nouns, nouns_pt_br
 from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores import colors
@@ -27,7 +27,7 @@ while True:
     box_translation = []                          # STORE THE MEANING OF THE NOUNS
     noun = choice(nouns)                          # CHOSEN NOUN
     noun_index = nouns.index(noun)                # FIND THE INDEX OF THE CHOSEN NOUN
-    noun_translation = substantivos[noun_index]   # GET THE TRANSLATION OF THE CHOSEN NOUN
+    noun_translation = nouns_pt_br[noun_index]    # GET THE TRANSLATION OF THE CHOSEN NOUN
     box_correct_translation = [noun_translation]  # MEANING OF THE CHOSEN NOUN ADDED SEPARATELY
     box_translation.append(noun_translation)      # MEANING OF THE CHOSEN NOUN ADDED AS THE FIRST INDEX
     box.append(noun)                              # CHOSEN NOUN ADDED AS THE FIRST INDEX OF THE LIST
@@ -39,7 +39,7 @@ while True:
         # CREATION
         fake = choice(nouns)
         fake_index = nouns.index(fake)
-        fake_translation = substantivos[fake_index]
+        fake_translation = nouns_pt_br[fake_index]
 
         # INSERTION
         box.append(fake)

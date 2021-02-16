@@ -1,8 +1,10 @@
 
 
 verbs_inf = [
-    'to be', 'to have', 'to do', 'to say', 'to go', 'to get', 'to make', 'to know', 'to think', 'to take',
-    'to see', 'to come', 'to want', 'to look', 'to use', 'to find', 'to give', 'to tell', 'to work', 'to call',
+    'to be', 'to have', 'to do', 'to say', 'to go', 'to get', 'to make', 'to know',
+    'to think', 'to take', 'to see', 'to come', 'to want', 'to look', 'to use', 'to find', 'to give', 'to tell',
+
+    'to work', 'to call',
 
     'to try', 'to ask', 'to need', 'to feel', 'to become', 'to leave', 'to put', 'to mean', 'to keep', 'to let',
     'to begin', 'to seem', 'to help', 'to talk', 'to turn', 'to start', 'to show', 'to hear', 'to play', 'to run',
@@ -24,4 +26,32 @@ verbs_inf = [
     'to guess', 'to select',
 
     'to click',
+]
+
+verbs_inf_pt_br = [
+    'ser/estar/ficar', 'ter', 'fazer', 'dizer', 'ir', 'adquirir/conseguir/obter/pegar', 'criar/fazer', 'saber',
+    'pensar', 'levar/pegar/tomar', 'ver', 'vir', 'querer', 'olhar', 'usar', 'encontrar', 'dar', 'contar/dizer',
+
+    'trabalhar', 'chamar',
+
+    'tentar', 'pedir', 'precisar', 'sentir', 'tornar-se', 'deixar', 'colocar', 'significar', 'manter', 'deixar',
+    'começar', 'parecer', 'ajudar', 'falar', 'virar', 'começar', 'mostrar', 'ouvir', 'jogar', 'correr',
+
+    'mover', 'gostar', 'viver', 'acreditar', 'segurar', 'trazer', 'acontecer', 'escrever', 'fornecer',
+    'sentar', 'permanecer', 'perder', 'pagar', 'encontrar', 'incluir', 'continuar', 'definir', 'aprender',
+    'mudar', 'liderar',
+
+    'compreender', 'observar', 'seguir', 'parar', 'criar', 'falar', 'ler', 'permitir', 'adicionar',
+    'gastar', 'crescer', 'abrir', 'caminhar', 'ganhar', 'oferecer', 'lembrar', 'amar', 'considerar',
+    'aparecer', 'comprar',
+
+    'esperar', 'servir', 'morrer', 'enviar', 'esperar', 'construir', 'ficar', 'cair', 'cortar', 'alcançar',
+    'matar', 'permanecer', 'sugerir', 'aumentar', 'passar', 'vender', 'exigir', 'relatar', 'decidir',
+    'puxar',
+
+    'quebrar', 'adquirir', 'realizar', 'administrar', 'desenvolver', 'confiar', 'imaginar', 'pisar', 'se arrepender',
+    'manipular', 'sonhar', 'discutir', 'beber', 'comer', 'pular', 'ver', 'repetir', 'saber',
+    'adivinhar', 'selecionar',
+
+    'clicar',
 ]

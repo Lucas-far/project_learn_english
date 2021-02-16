@@ -1,3 +1,3 @@
 
 
-and_ = ['and']
+and_ = ['and', 'e']

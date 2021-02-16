@@ -23,7 +23,7 @@ adjectives = [
     'obnoxiously', 'fast', 'golden'
 ]
 
-adjetivos = [
+adjectives_pt_br = [
     'outro(a)', 'novo(a)', 'bom(a)', 'alto(a)', 'velho(a)', 'ótimo(a)', 'grande', 'americano(a)',
     'pequeno(a)', 'grande', 'nacional', 'novo(a)', 'diferente', 'preto(a)', 'longo', 'pequeno', 'importante',
     'político', 'ruim/mau/má', 'branco(a)',
@@ -54,14 +54,19 @@ adjetivos = [
 
 if __name__ == '__main__':
     bricks = '=' * 100
-    block = f'\n{bricks}\n'
 
     print('\n')
 
     print(bricks)
     print(f'{len(adjectives) = }')
-    print(f'{len(adjetivos) = }')
+    print(f'{len(adjectives_pt_br) = }')
 
-    print(block)
-    for x in zip(adjectives, adjetivos):
-        print(x)
+    print('\n')
+    for word in zip(adjectives, adjectives_pt_br):
+        print(word)
+
+    print('\n')
+    counter = 0
+    while counter < len(adjectives):
+        print(f"{adjectives[counter]}_ = ['{adjectives[counter]}', '{adjectives_pt_br[counter]}']")
+        counter += 1

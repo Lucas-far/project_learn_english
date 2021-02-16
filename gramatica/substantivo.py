@@ -96,7 +96,7 @@ nouns = [
     'year', 'years'
 ]
 
-substantivos = [
+nouns_pt_br = [
     'ar', 'ares',
     'área', 'áreas',
     'arte', 'artes',
@@ -193,9 +193,14 @@ substantivos = [
 ]
 
 if __name__ == '__main__':
+    bricks = '=' * 100
 
-    print(len(nouns))
-    print(len(substantivos))
+    print('\n')
 
-    print(nouns[nouns.index('other')])
-    print(substantivos[substantivos.index('outro')])
+    print(bricks)
+    print(f'{len(nouns) = }')
+    print(f'{len(nouns_pt_br) = }')
+
+    print('\n')
+    for word in zip(nouns, nouns_pt_br):
+        print(word)
