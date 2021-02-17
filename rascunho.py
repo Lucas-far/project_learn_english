@@ -1,31 +1,116 @@
 
 
-from gramatica.preposicao import *
+"""
+I have a tv to watch    -> Eu tenho uma tv para assistir (infinitivo)
+I watch tv              -> Eu assisto TV                 (presente)
+I am watching tv        -> Estou assistindo tv           (presente contínuo)
+I have watched tv       -> Eu assisti tv                 (presente perfeito)
+I have been watching tv -> Eu tenho assistido tv         (presente perfeito contínuo)
 
-# prep = [
-#     about_[0], above_[0], across_[0], after_[0], against_[0], ago_[0], among_[0], around_[0], as_[0], at_[0],
-#     before_[0], behind_[0], below_[0], between_[0], by_[0], down_[0], during_[0], for_[0], from_[0], in_[0],
-#     in_front_of_[0], into_[0], like_[0], next_to_[0], of_[0], on_[0], out_[0], over_[0], since_[0], through_[0],
-#     to_[0], towards_[0], under_[0], underneath_[0], until_[0], up_[0], with_[0], without_[0]
-# ]
+I watched tv            -> Eu assisti TV                  (passado)
+I was watching tv       -> Eu estava assistindo televisão (passado contínuo)
+I had watched tv        -> Eu tinha assistido tv          (passado perfeito)
+I had been watching tv  -> Eu estava assistindo tv        (passado perfeito contínuo)
+
+I will watch tv              -> Vou assistir tv           (futuro)
+I will be watching tv        -> Estarei assistindo tv     (futuro contínuo)
+I will have watched tv       -> Eu terei assistido tv     (futuro perfeito)
+I will have been watching tv -> Eu estarei assistindo tv  (fututro perfeito contínuo)
+"""
 
 
-
-# prep_pt_br = [
-#     about_[1], above_[1], across_[1], after_[1], against_[1], ago_[1], among_[1], around_[1], as_[1], at_[1],
-#     before_[1], behind_[1], below_[1], between_[1], by_[1], down_[1], during_[1], for_[1], from_[1], in_[1],
-#     in_front_of_[1], into_[1], like_[1], next_to_[1], of_[1], on_[1], out_[1], over_[1], since_[1], through_[1],
-#     to_[1], towards_[1], under_[1], underneath_[1], until_[1], up_[1], with_[1], without_[1]
-# ]
-
-
-
-print(prep, '\n', len(prep))
-print(prep_pt_br, '\n', len(prep_pt_br))
-
-print('\n')
-print(f'{len(prep) = }')
-print(f'{len(prep_pt_br) = }')
-print('\n')
-for word in zip(prep, prep_pt_br):
-    print(word)
+nouns_pt_br = [
+    'ar', 'ares',
+    'área', 'áreas',
+    'arte', 'artes',
+    'corpo', 'corpos',
+    'livro', 'livros',
+    'negócios', 'os negócios',
+    'carro ', 'carros',
+    'mudança', 'mudanças',
+    'criança', 'crianças',
+    'cidade', 'cidades',
+    'comunidade', 'comunidades',
+    'empresa', 'empresas',
+    'país', 'países',
+    'dia', 'dias',
+    'porta', 'portas',
+    'final', 'finais',
+    'olho', 'olhos',
+    'rosto', 'rostos',
+    'fato', 'fatos',
+    'família', 'famílias',
+    'pai', 'pais',
+    'força', 'forças',
+    'amigo', 'amigos',
+    'jogo', 'jogos',
+    'menina', 'meninas',
+    'governo', 'governos',
+    'grupo', 'grupos',
+    'cara', 'pessoal',
+    'mão', 'mãos',
+    'cabeça', 'cabeças',
+    'história', 'histórias',
+    'casa', 'casas',
+    'hora', 'horas',
+    'casa', 'casas',
+    'ideia', 'ideias',
+    'problema', 'problemas',
+    'emprego', 'empregos',
+    'criança', 'crianças',
+    'tipo', 'tipos',
+    'lei', 'leis',
+    'nível', 'níveis',
+    'vida', 'vidas',
+    'linha', 'linhas',
+    'homem', 'homens',
+    'membro', 'membros',
+    'minuto', 'minutos',
+    'momento', 'momentos',
+    'mês', 'meses',
+    'manhã', 'manhãs',
+    'mãe', 'mães',
+    'nome', 'nomes',
+    'noite', 'noites',
+    'número', 'números',
+    'escritório', 'escritórios',
+    'outro(a)', 'outros(as)',
+    'pais',
+    'parte', 'partes',
+    'festa', 'festas',
+    'pessoa', 'pessoas',
+    'pedaço de informação', 'pedaços de informação',
+    'lugar', 'lugares',
+    'ponto', 'pontos',
+    'poder', 'poderes',
+    'presidente', 'presidentes',
+    'problema', 'problemas',
+    'programa', 'programas',
+    'questão', 'questões',
+    'razão', 'razões',
+    'pesquisa', 'pesquisas',
+    'resultado', 'resultados',
+    'direito', 'direitos',
+    'quarto', 'quartos',
+    'escola', 'escolas',
+    'serviço', 'serviços',
+    'lado', 'lados',
+    'estado', 'estados',
+    'história', 'histórias',
+    'estudante', 'estudantes',
+    'estudo', 'estudos',
+    'sistema', 'sistemas',
+    'professor(a)', 'professores',
+    'equipe', 'equipes',
+    'coisa', 'coisas',
+    'tempo', 'tempos',
+    'guerra', 'guerras',
+    'água', 'águas',
+    'caminho', 'caminhos',
+    'semana', 'semanas',
+    'mulher', 'mulheres',
+    'palavra', 'palavras',
+    'trabalho', 'trabalhos',
+    'mundo', 'mundos',
+    'ano', 'anos'
+]

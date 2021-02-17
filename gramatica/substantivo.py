@@ -1,5 +1,105 @@
 
 
+nouns_dict = {
+    'the air': ('air', 'airs', 'ar', 'ares'),
+    'the area': ('area', 'areas', 'área', 'áreas'),
+    'the art': ('art', 'arts', 'arte', 'artes'),
+    'the body': ('body', 'bodies', 'corpo', 'corpos'),
+    'the book': ('book', 'books', 'livro', 'livros'),
+    'the business': ('business', 'businesses', 'negócios', 'os negócios'),
+    'the car': ('car', 'cars', 'carro ', 'carros'),
+    'the change': ('change', 'changes', 'mudança', 'mudanças'),
+    'the child': ('child', 'children', 'criança', 'crianças'),
+    'the city': ('city', 'cities', 'cidade', 'cidades'),
+    'the community': ('community', 'communities', 'comunidade', 'comunidades'),
+    'the company': ('company', 'companies', 'empresa', 'empresas'),
+    'the country': ('country', 'countries', 'país', 'países'),
+    'the day': ('day', 'days', 'dia', 'dias'),
+    'the door': ('door', 'doors', 'porta', 'portas'),
+    'the ending': ('ending', 'endings', 'final', 'finais'),
+    'the eye': ('eye', 'eyes', 'olho', 'olhos'),
+    'the face': ('face', 'faces', 'rosto', 'rostos'),
+    'the fact': ('fact', 'facts', 'fato', 'fatos'),
+    'the family': ('family', 'families', 'família', 'famílias'),
+    'the father': ('father', 'fathers', 'pai', 'pais'),
+    'the strength': ('strength', 'strengths', 'força', 'forças'),
+    'the friend': ('friend', 'friends', 'amigo', 'amigos'),
+    'the game': ('game', 'games', 'jogo', 'jogos'),
+    'the girl': ('girl', 'girls', 'menina', 'meninas'),
+    'the government': ('government', 'governments', 'governo', 'governos'),
+    'the group': ('group', 'groups', 'grupo', 'grupos'),
+    'the guy': ('guy', 'guys', 'cara', 'pessoal'),
+    'the hand': ('hand', 'hands', 'mão', 'mãos'),
+    'the head': ('head', 'heads', 'cabeça', 'cabeças'),
+    'the history': ('history', 'histories', 'história', 'histórias'),
+    'the home': ('home', 'homes', 'casa', 'casas'),
+    'the hour': ('hour', 'hours', 'hora', 'horas'),
+    'the house': ('house', 'houses', 'casa', 'casas'),
+    'the idea': ('idea', 'ideas', 'ideia', 'ideias'),
+    'the issue': ('issue', 'issues', 'problema', 'problemas'),
+    'the job': ('job', 'jobs', 'emprego', 'empregos'),
+    'the kid': ('kid', 'kids', 'criança', 'crianças'),
+    'the kind': ('kind', 'kinds', 'tipo', 'tipos'),
+    'the law': ('law', 'laws', 'lei', 'leis'),
+    'the level': ('level', 'levels', 'nível', 'níveis'),
+    'the life': ('life', 'lifes', 'vida', 'vidas'),
+    'the line': ('line', 'lines', 'linha', 'linhas'),
+    'the man': ('man', 'men', 'homem', 'homens'),
+    'the member': ('member', 'members', 'membro', 'membros'),
+    'the minute': ('minute', 'minutes', 'minuto', 'minutos'),
+    'the moment': ('moment', 'moments', 'momento', 'momentos'),
+    'the month': ('month', 'months', 'mês', 'meses'),
+    'the morning': ('morning', 'mornings', 'manhã', 'manhãs'),
+    'the mother': ('mother', 'mothers', 'mãe', 'mães'),
+    'the name': ('name', 'names', 'nome', 'nomes'),
+    'the night': ('night', 'nights', 'noite', 'noites'),
+    'the number': ('number', 'numbers', 'número', 'números'),
+    'the office': ('office', 'offices', 'escritório', 'escritórios'),
+    'the other': ('other', 'others', 'outro(a)', 'outros(as)'),
+    'the parent': ('parent', 'parents', 'pai', 'pais'),
+    'the part': ('part', 'parts', 'parte', 'partes'),
+    'the party': ('party', 'parties', 'festa', 'festas'),
+    'the person': ('person', 'people', 'pessoa', 'pessoas'),
+    'the piece of information': ('piece of information', 'pieces of information', 'informação', 'informações'),
+    'the place': ('place', 'places', 'lugar', 'lugares'),
+    'the point': ('point', 'points', 'ponto', 'pontos'),
+    'the power': ('power', 'powers', 'poder', 'poderes'),
+    'the president': ('president', 'presidents', 'presidente', 'presidentes'),
+    'the problem': ('problem', 'problems', 'problema', 'problemas'),
+    'the program': ('program', 'programs', 'programa', 'programas'),
+    'the question': ('question', 'questions', 'questão', 'questões'),
+    'the reason': ('reason', 'reasons', 'razão', 'razões'),
+    'the research': ('research', 'researches', 'pesquisa', 'pesquisas'),
+    'the result': ('result', 'results', 'resultado', 'resultados'),
+    'the right': ('right', 'rights', 'direito', 'direitos'),
+    'the room': ('room', 'rooms', 'quarto', 'quartos'),
+    'the school': ('school', 'schools', 'escola', 'escolas'),
+    'the service': ('service', 'services', 'serviço', 'serviços'),
+    'the side': ('side', 'sides', 'lado', 'lados'),
+    'the state': ('state', 'states', 'estado', 'estados'),
+    'the story': ('story', 'stories', 'história', 'histórias'),
+    'the student': ('student', 'students', 'estudante', 'estudantes'),
+    'the study': ('study', 'studies', 'estudo', 'estudos'),
+    'the system': ('system', 'systems', 'sistema', 'sistemas'),
+    'the teacher': ('teacher', 'teachers', 'professor(a)', 'professores'),
+    'the team': ('team', 'teams', 'equipe', 'equipes'),
+    'the thing': ('thing', 'things', 'coisa', 'coisas'),
+    'the time': ('time', 'times', 'tempo', 'tempos'),
+    'the war': ('war', 'wars', 'guerra', 'guerras'),
+    'the water': ('water', 'waters', 'água', 'águas'),
+    'the way': ('way', 'ways', 'caminho', 'caminhos'),
+    'the week': ('week', 'weeks', 'semana', 'semanas'),
+    'the woman': ('woman', 'women', 'mulher', 'mulheres'),
+    'the word': ('word', 'words', 'palavra', 'palavras'),
+    'the work': ('work', 'works', 'trabalho', 'trabalhos'),
+    'the world': ('world', 'worlds', 'mundo', 'mundos'),
+    'the year': ('year', 'years', 'ano', 'anos')
+}
+
+nouns_dict_keys = [word for word in nouns_dict]
+
+nouns_dict_values = [word for word in nouns_dict.values()]
+
 nouns = [
     'air', 'airs',
     'area', 'areas',
@@ -192,15 +292,7 @@ nouns_pt_br = [
     'ano', 'anos'
 ]
 
+
 if __name__ == '__main__':
-    bricks = '=' * 100
-
     print('\n')
-
-    print(bricks)
-    print(f'{len(nouns) = }')
-    print(f'{len(nouns_pt_br) = }')
-
-    print('\n')
-    for word in zip(nouns, nouns_pt_br):
-        print(word)
+    print(f"{len(nouns_dict) = }")

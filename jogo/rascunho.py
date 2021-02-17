@@ -1,20 +1,15 @@
-
-
-from banco_de_dados import *
-from cores import colors as x
-from random import choice, shuffle
-from traduzir import do_translation as traduza
+from random import choice
 
 from gramatica.substantivo import nouns
 from gramatica.adjetivo import adjectives
 
-from gramatica.verbo import verbs_inf
-from gramatica.verbo_presente_sgl import pst_sgl
-from gramatica.verbo_presente_pl import pst_pl
-from gramatica.verbo_passado import past
-from gramatica.verbo_be import to_be_pst_gl_l
+from gramatica.verbos.verbo import verbs_inf
+from gramatica.verbos.verbo_presente_sgl import pst_sgl
+from gramatica.verbos.verbo_presente_pl import pst_pl
+from gramatica.verbos.verbo_passado import past
+from gramatica.verbos.verbo_be import to_be_pst_gl_l
 
-from gramatica.verbo_can import (can_pst_lvl_easy, can_pst_lvl_average, can_pst_lvl_fluent)
+from gramatica.verbos.verbo_can import (can_pst_lvl_easy, can_pst_lvl_average, can_pst_lvl_fluent)
 
 substantivo = choice(nouns)
 adjetivo = choice(adjectives)
