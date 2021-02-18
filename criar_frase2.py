@@ -1,18 +1,16 @@
 
 
 from criar_frase import sentence_maker
-from cores import colors as _
 
 from gramatica.pronomes import pronouns_personal_upper
 from gramatica.verbo_to_be import to_be_present
-from gramatica.adjetivos import adjectives
-from gramatica.preposicoes import prepositions
+from gramatica.adjetivos.adjetivos import adjectives
 from gramatica.artigos import *
 from gramatica.substantivos import nouns
 from gramatica.verbos_infinitivo import verbs_infinitive
 from gramatica.tempo_verbal_present import present_time_tense
 from gramatica.adjetivos_possessivos import adjectives_possessive
-from gramatica.pronomes_demonstrativos import pronouns_demonstrative_lower, pronouns_demonstrative_upper
+
 
 # Método para frases de 3 elementos
 def sentence_joiner_three_elements(first_database, second_database, third_database, database_len):

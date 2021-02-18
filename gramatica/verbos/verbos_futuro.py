@@ -1,7 +1,7 @@
 
 
-from gramatica.verbos.verbo_presente_pl import pst_pl_dict_keys
-from gramatica.verbos.verbo import verbs_inf_dict_values
+from gramatica.verbos.verbos_presente_pl import pst_pl_dict_keys
+from gramatica.verbos.verbos_infinitivo import verbs_inf_dict_values
 
 fut_dict = {
     'will say': ('will say', 'direi/falarei'),

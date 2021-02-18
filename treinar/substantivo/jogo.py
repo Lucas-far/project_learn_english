@@ -1,6 +1,6 @@
 
 
-from gramatica.substantivo import nouns, nouns_pt_br
+from gramatica.substantivos.substantivo import nouns, nouns_pt_br
 from metodos.banco_de_dados import *
 from random import choice, shuffle
 from cores import colors

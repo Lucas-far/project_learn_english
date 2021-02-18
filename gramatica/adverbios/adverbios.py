@@ -1,5 +1,114 @@
 
 
+adv_ly_dict = {
+    'accidentally': ('accidentally', 'acidentalmente'),
+    'actually': ('actually', 'na verdade'),
+    'angrily': ('angrily', 'com raiva'),
+    'anxiously': ('anxiously', 'ansiosamente'),
+    'awkwardly': ('awkwardly', 'desajeitadamente/estranhamente'),
+    'badly': ('badly', 'mal'),
+    'blindly': ('blindly', 'cegamente'),
+    'boastfully': ('boastfully', 'orgulhosamente'),
+    'boldly': ('boldly', 'ousadamente'),
+    'bravely': ('bravely', 'corajosamente'),
+    'brightly': ('brightly', 'brilhantemente'),
+    'certainly': ('certainly', 'certamente'),
+    'cheerfully': ('cheerfully', 'alegremente'),
+    'clearly': ('clearly', 'claramente'),
+    'coyly': ('coyly', 'timidamente'),
+    'crazily': ('crazily', 'loucamente'),
+    'defiantly': ('defiantly', 'desafiadoramente'),
+    'deftly': ('deftly', 'habilmente'),
+    'deliberately': ('deliberately', 'deliberadamente'),
+    'devotedly': ('devotedly', 'devotadamente'),
+    'directly': ('directly', 'diretamente'),
+    'doubtfully': ('doubtfully', 'duvidosamente'),
+    'dramatically': ('dramatically', 'dramaticamente'),
+    'dutifully': ('dutifully', 'obedientemente'),
+    'eagerly': ('eagerly', 'ansiosamente'),
+    'early': ('early', 'cedo'),
+    'elegantly': ('elegantly', 'elegantemente'),
+    'enormously': ('enormously', 'enormemente'),
+    'especially': ('especially', 'especialmente'),
+    'evenly': ('evenly', 'uniformemente'),
+    'eventually': ('eventually', 'eventualmente'),
+    'exactly': ('exactly', 'exatamente'),
+    'faithfully': ('faithfully', 'fielmente'),
+    'finally': ('finally', 'finalmente'),
+    'foolishly': ('foolishly', 'tolamente'),
+    'fortunately': ('fortunately', 'felizmente'),
+    'frequently': ('frequently', 'frequentemente'),
+    'gleefully': ('gleefully', 'alegremente'),
+    'gracefully': ('gracefully', 'graciosamente'),
+    'happily': ('happily', 'felizmente'),
+    'hastily': ('hastily', 'apressadamente/precipitadamente'),
+    'honestly': ('honestly', 'honestamente'),
+    'hopelessly': ('hopelessly', 'desesperadamente/desesperançosamente'),
+    'hourly': ('hourly', 'de hora em hora/por hora'),
+    'hungrily': ('hungrily', 'avidamente/famintamente'),
+    'innocently': ('innocently', 'inocentemente'),
+    'inquisitively': ('inquisitively', 'inquisitivamente'),
+    'irritably': ('irritably', 'irritantemente'),
+    'jealously': ('jealously', 'ciumentamente'),
+    'justly': ('justly', 'justamente'),
+    'kindly': ('kindly', 'gentilmente'),
+    'lazily': ('lazily', 'preguiçosamente'),
+    'loosely': ('loosely', 'folgadamente/livremente/vagamente'),
+    'madly': ('madly', 'loucamente'),
+    'merrily': ('merrily', 'alegremente'),
+    'mortally': ('mortally', 'mortalmente'),
+    'mysteriously': ('mysteriously', 'misteriosamente'),
+    'nearly': ('nearly', 'aproximadamente/quase'),
+    'nervously': ('nervously', 'nervosamente'),
+    'normally': ('normally', 'normalmente'),
+    'obediently': ('obediently', 'obedientemente'),
+    'occasionally': ('occasionally', 'ocasionalmente'),
+    'particularly': ('particularly', 'particularmente'),
+    'perfectly': ('perfectly', 'perfeitamente'),
+    'politely': ('politely', 'educadamente'),
+    'poorly': ('poorly', 'deficientemente/pobremente'),
+    'powerfully': ('powerfully', 'poderosamente'),
+    'probably': ('probably', 'provavelmente'),
+    'promptly': ('promptly', 'imediatamente/prontamente'),
+    'quickly': ('quickly', 'rapidamente'),
+    'rapidly': ('rapidly', 'rapidamente'),
+    'rarely': ('rarely', 'raramente'),
+    'really': ('really', 'realmente'),
+    'recently': ('recently', 'recentemente'),
+    'regularly': ('regularly', 'regularmente'),
+    'rudely': ('rudely', 'rudemente'),
+    'safely': ('safely', 'com segurança'),
+    'selfishly': ('selfishly', 'egoisticamente'),
+    'seriously': ('seriously', 'seriamente'),
+    'shakily': ('shakily', 'tremulamente'),
+    'sharply': ('sharply', 'bruscamente/nitidamente/rispidamente'),
+    'silently': ('silently', 'silenciosamente'),
+    'simply': ('simply', 'simplesmente'),
+    'slowly': ('slowly', 'lentamente'),
+    'solemnly': ('solemnly', 'solenemente'),
+    'speedily': ('speedily', 'rapidamente'),
+    'sternly': ('sternly', 'severamente'),
+    'suddenly': ('suddenly', 'repentinamente'),
+    'technically': ('technically', 'tecnicamente'),
+    'tediously': ('tediously', 'tediosamente'),
+    'unexpectedly': ('unexpectedly', 'inesperadamente'),
+    'usually': ('usually', 'geralmente'),
+    'victoriously': ('victoriously', 'vitorioso'),
+    'vivaciously': ('vivaciously', 'vivazmente'),
+    'warmly': ('warmly', 'calorosamente'),
+    'wearily': ('wearily', 'cansativamente'),
+    'weekly': ('weekly', 'semanalmente'),
+    'wildly': ('wildly', 'descontroladamente'),
+    'yearly': ('yearly', 'anualmente'),
+    'consequently': ('consequently', 'consequentemente'),
+    'subsequently': ('subsequently', 'subsequentemente'),
+    'similarly': ('similarly', 'semelhantemente/similarmente'),
+}
+
+adv_ly_dict_keys = [word for word in adv_ly_dict]
+
+adv_ly_dict_values = [word[1] for word in adv_ly_dict.values()]
+
 adv_ly = [
     'accidentally', 'actually', 'angrily', 'anxiously', 'awkwardly', 'badly', 'blindly',
 
@@ -34,8 +143,6 @@ adv_ly = [
     'unexpectedly', 'usually', 'victoriously', 'vivaciously', 'warmly', 'wearily', 'weekly',
 
     'wildly', 'yearly', 'consequently', 'subsequently', 'similarly',
-
-    'promptly'
 ]
 
 adv_ly_pt_br = [
@@ -61,7 +168,7 @@ adv_ly_pt_br = [
 
     'obedientemente', 'ocasionalmente', 'particularmente', 'perfeitamente', 'educadamente',
 
-    'deficientemente/pobremente', 'poderosamente', 'provavelmente', 'prontamente', 'rapidamente', 'rapidamente',
+    'deficientemente/pobremente', 'poderosamente', 'provavelmente', 'imediatamente/prontamente', 'rapidamente', 'rapidamente',
 
     'raramente', 'realmente', 'recentemente', 'regularmente', 'rudemente', 'com segurança', 'egoisticamente',
 
@@ -71,10 +178,10 @@ adv_ly_pt_br = [
 
     'inesperadamente', 'geralmente', 'vitorioso', 'vivazmente', 'calorosamente', 'cansativamente', 'semanalmente',
 
-    'descontroladamente', 'anualmente', 'consequentemente', 'subsequentemente', 'semelhantemente/similarmente',
-
-    'prontamente/imediatamente'
+    'descontroladamente', 'anualmente', 'consequentemente', 'subsequentemente', 'semelhantemente/similarmente'
 ]
+
+# var = [word for word in zip(adv_ly, adv_ly_pt_br)]
 
 adv_frequency = [
     'always', 'eventually', 'frequently', 'hourly', 'never', 'occasionally',
@@ -194,7 +301,11 @@ if __name__ == '__main__':
     for word in zip(adv_others, adv_others_pt_br):
         print(word)
 
-
+    # print(var)
+    # counter = 0
+    # while counter < len(var):
+    #     print(f"'{adv_ly[counter]}': {var[counter]},")
+    #     counter += 1
     # for x in adv_positivity:
     #     print(f'print(adv_ly_gl_pt_br[{adv_ly_gl.index(x)}])')
     # print("'" + adv_ly_gl_pt_br[8] + "'" + ',' + ' ')

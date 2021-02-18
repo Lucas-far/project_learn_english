@@ -1,6 +1,6 @@
 from random import choice
 
-from gramatica.substantivo import nouns
+from gramatica.substantivos.substantivo import nouns
 from gramatica.adjetivo import adjectives
 
 from gramatica.verbos.verbo import verbs_inf

@@ -1,6 +1,6 @@
 
 
-from gramatica.substantivo import nouns
+from gramatica.substantivos.substantivo import nouns
 from metodos.banco_de_dados import verify
 
 
